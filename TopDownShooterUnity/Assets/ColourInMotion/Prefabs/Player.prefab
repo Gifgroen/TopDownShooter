@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 5971619652876959427}
   - component: {fileID: 7862649717161854403}
   m_Layer: 0
-  m_Name: Physics
+  m_Name: VehicleSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
