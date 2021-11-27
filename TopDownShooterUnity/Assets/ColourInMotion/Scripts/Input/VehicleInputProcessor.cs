@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -9,7 +10,7 @@ namespace ColourInMotion.Input
     {
         #region Exposed fields
 
-        public event UnityAction<Vector2> OnMove = delegate { };
+        public event UnityAction<Vector2> OnMove;
         
         #endregion
 
@@ -25,12 +26,11 @@ namespace ColourInMotion.Input
         {
             _actionMap = new VehicleControllerInput();
             _actionMap.Player.SetCallbacks(this);
-            _actionMap.Enable();
         }
 
         private void OnDisable()
         {
-            _actionMap.Disable();
+            _actionMap.Player.Disable();
             _actionMap.Player.SetCallbacks(null);
         }
 
@@ -48,5 +48,10 @@ namespace ColourInMotion.Input
         }
 
         #endregion
+
+        public void EnableMovement()
+        {
+            _actionMap.Player.Enable();
+        }
     }
 }

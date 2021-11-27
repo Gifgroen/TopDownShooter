@@ -21,6 +21,8 @@ namespace ColourInMotion.Control
 
         [SerializeField] private float turnSpeed = 1;
 
+        [SerializeField] private float airDrag;
+
         [SerializeField] private Rigidbody movementSphere;
 
         [SerializeField] private LayerMask floorLayerMask;
@@ -32,7 +34,10 @@ namespace ColourInMotion.Control
         private Vector2 _inputAxis;
 
         private float _movementInput;
+        
         private float _turnInput;
+        
+        private float _groundDrag;
 
         [SerializeField] private bool isGrounded;
 
@@ -42,6 +47,7 @@ namespace ColourInMotion.Control
 
         private void OnEnable()
         {
+            inputProcessor.EnableMovement();
             inputProcessor.OnMove += OnMove;
         }
 
@@ -53,6 +59,7 @@ namespace ColourInMotion.Control
         private void Start()
         {
             movementSphere.transform.parent = null;
+            _groundDrag = movementSphere.drag;
         }
 
         private void Update()
@@ -71,9 +78,11 @@ namespace ColourInMotion.Control
             float newRotation = _turnInput * turnSpeed * Time.deltaTime * movementInput;
             transform1.Rotate(0, newRotation, 0, Space.World);
 
-            isGrounded = Physics.Raycast(transform1.position, -transform1.up, out RaycastHit hit, 1f, floorLayerMask);
+            Vector3 up = transform1.up;
+            isGrounded = Physics.Raycast(transform1.position, -up, out RaycastHit hit, 1f, floorLayerMask);
+            transform1.rotation *= Quaternion.FromToRotation(up, hit.normal);
 
-            transform1.rotation *= Quaternion.FromToRotation(transform1.up, hit.normal);
+            movementSphere.drag = isGrounded ? _groundDrag : airDrag;
         }
 
         private void FixedUpdate()
@@ -84,7 +93,7 @@ namespace ColourInMotion.Control
             }
             else
             {
-                movementSphere.AddForce(Vector3.down * GravityFactor, ForceMode.Acceleration);
+                movementSphere.AddForce(Vector3.down * GravityFactor);
             }
         }
 

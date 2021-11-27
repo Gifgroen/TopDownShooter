@@ -32,7 +32,7 @@ namespace ColourInMotion.Input
             ""bindings"": [
                 {
                     ""name"": ""WASD"",
-                    ""id"": ""1cbc2cc5-302c-4254-9f24-eaa65974e992"",
+                    ""id"": ""df1230ee-cca9-4271-8208-a9449074ff93"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -43,7 +43,7 @@ namespace ColourInMotion.Input
                 },
                 {
                     ""name"": ""up"",
-                    ""id"": ""edba6039-3504-4d2a-b3ca-db9394a1e26c"",
+                    ""id"": ""6c2e5b66-2234-4cd4-8ea1-e0c9334887fb"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -54,7 +54,7 @@ namespace ColourInMotion.Input
                 },
                 {
                     ""name"": ""down"",
-                    ""id"": ""62fabbdc-ea0c-41d3-8802-c90c917f6a25"",
+                    ""id"": ""d66bede2-9da9-45df-a4af-e00ecad2e4ed"",
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -65,7 +65,7 @@ namespace ColourInMotion.Input
                 },
                 {
                     ""name"": ""left"",
-                    ""id"": ""746441eb-eaa1-46d3-a7d2-0202e8eb5568"",
+                    ""id"": ""74a36fde-84c3-4741-b1e2-cff4eada1633"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -76,7 +76,7 @@ namespace ColourInMotion.Input
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""b88ee8ce-7b11-43b6-9000-9bbcab00028a"",
+                    ""id"": ""e387cec4-80ad-4bda-b8e6-91afb43a743c"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -87,7 +87,7 @@ namespace ColourInMotion.Input
                 },
                 {
                     ""name"": ""Arrows"",
-                    ""id"": ""2d9d2ed3-79a6-40f3-bf05-88f64c6a7028"",
+                    ""id"": ""c70c3444-2423-49f0-b1ec-7f827d22c6e9"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -98,7 +98,7 @@ namespace ColourInMotion.Input
                 },
                 {
                     ""name"": ""up"",
-                    ""id"": ""daade6db-7d2c-4695-aa6b-392f051383c3"",
+                    ""id"": ""6a181e89-82b4-4793-b730-1bcb38972112"",
                     ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -109,7 +109,7 @@ namespace ColourInMotion.Input
                 },
                 {
                     ""name"": ""down"",
-                    ""id"": ""64bf5af9-371b-49cc-bd28-3094c49bc343"",
+                    ""id"": ""3a6baff3-7300-40bf-8b4c-fbc18865b91f"",
                     ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -120,7 +120,7 @@ namespace ColourInMotion.Input
                 },
                 {
                     ""name"": ""left"",
-                    ""id"": ""d741691d-a66a-47dd-a7dc-f16253e03760"",
+                    ""id"": ""7469333b-c39b-4880-bc7c-78ad53cea982"",
                     ""path"": ""<Keyboard>/leftArrow"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -131,118 +131,8 @@ namespace ColourInMotion.Input
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""1a232776-e80d-40f5-b936-253c5bad878c"",
+                    ""id"": ""8b9f529f-39ee-4010-80b4-37f0d92fb8b5"",
                     ""path"": ""<Keyboard>/rightArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""GamePad Arrows"",
-                    ""id"": ""e05fc135-d9f4-4ed2-91ab-4b1e5d1b6520"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""ffed6be5-801f-4379-bf82-1bf53e779847"",
-                    ""path"": ""<Gamepad>/dpad/up"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""d90e728f-9000-4a13-9017-3a65735bb0cb"",
-                    ""path"": ""<Gamepad>/dpad/down"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""b7f3a9bc-6c57-4a32-8649-a5f37bb1ef07"",
-                    ""path"": ""<Gamepad>/dpad/left"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""7c50368e-96cf-49c7-a58c-352a880b6fa8"",
-                    ""path"": ""<Gamepad>/dpad/right"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""2D Vector"",
-                    ""id"": ""9ce02ca1-a8f0-4191-b274-e8ee9033d34f"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""49626826-491a-42d7-9767-abcf6a4a4934"",
-                    ""path"": ""<Gamepad>/leftStick/up"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""e27a837a-3f29-4815-bcf5-a0c1eed447e5"",
-                    ""path"": ""<Gamepad>/leftStick/down"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""dde334c2-6c86-4f66-8e4d-6058302ad3ba"",
-                    ""path"": ""<Gamepad>/leftStick/left"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""f859790a-84c6-441a-a062-3b555e2cf288"",
-                    ""path"": ""<Gamepad>/leftStick/right"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
