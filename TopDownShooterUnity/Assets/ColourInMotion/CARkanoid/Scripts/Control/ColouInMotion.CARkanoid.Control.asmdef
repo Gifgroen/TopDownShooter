@@ -1,0 +1,16 @@
+{
+    "name": "ColouInMotion.CARkanoid.Control",
+    "rootNamespace": "",
+    "references": [
+        "GUID:084c55c6d7e8b41b79075a782f95938b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

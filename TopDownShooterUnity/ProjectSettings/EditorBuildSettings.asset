@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/ColourInMotion/Scenes/Sandbox.unity
+  - enabled: 0
+    path: Assets/ColourInMotion/RaceShooter/Scenes/Sandbox.unity
     guid: 2f09a198bb95140b3a079760bf24f528
+  - enabled: 1
+    path: Assets/ColourInMotion/CARkanoid/Scenes/CARkanoid.unity
+    guid: bf94a9994efe64d17afd1676658ea3ec
   m_configObjects: {}
